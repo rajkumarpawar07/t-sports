@@ -15,6 +15,7 @@ class appRoundedSmallImage extends StatelessWidget {
     this.overLayColor,
     this.backgroundColor,
     this.isNetworkImage = false,
+    this.makeItRounded = false,
   });
 
   final double height;
@@ -25,6 +26,7 @@ class appRoundedSmallImage extends StatelessWidget {
   final Color? overLayColor;
   final Color? backgroundColor;
   final bool isNetworkImage;
+  final bool makeItRounded;
 
   @override
   Widget build(BuildContext context) {
@@ -38,13 +40,22 @@ class appRoundedSmallImage extends StatelessWidget {
                   ? myColors.black
                   : myColors.white),
           borderRadius: BorderRadius.circular(100)),
-      child: Image(
-          // color: myHelperFunctions.isDarkMode(context)
-          //     ? myColors.white
-          //     : myColors.black,
-          image: isNetworkImage
-              ? NetworkImage(image)
-              : AssetImage(image) as ImageProvider),
+      child: makeItRounded
+          ? ClipRRect(
+              borderRadius: BorderRadius.circular(100),
+              child: Image(
+                  fit: fit,
+                  color: overLayColor,
+                  image: isNetworkImage
+                      ? NetworkImage(image)
+                      : AssetImage(image) as ImageProvider),
+            )
+          : Image(
+              fit: fit,
+              color: overLayColor,
+              image: isNetworkImage
+                  ? NetworkImage(image)
+                  : AssetImage(image) as ImageProvider),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tsports/Utils/constants/colors.dart';
 
 class myElevatedButtonTheme {
   myElevatedButtonTheme._();
@@ -8,10 +9,10 @@ class myElevatedButtonTheme {
       style: ElevatedButton.styleFrom(
     elevation: 0,
     foregroundColor: Colors.white,
-    backgroundColor: Colors.blue,
+    backgroundColor: myColors.primary,
     disabledBackgroundColor: Colors.grey,
     disabledForegroundColor: Colors.grey,
-    side: const BorderSide(color: Colors.blue),
+    side: const BorderSide(color: myColors.primary),
     padding: const EdgeInsets.symmetric(
       vertical: 18,
     ),
@@ -25,10 +26,10 @@ class myElevatedButtonTheme {
       style: ElevatedButton.styleFrom(
     elevation: 0,
     foregroundColor: Colors.white,
-    backgroundColor: Colors.blue,
+    backgroundColor: myColors.primary,
     disabledBackgroundColor: Colors.grey,
     disabledForegroundColor: Colors.grey,
-    side: const BorderSide(color: Colors.blue),
+    side: const BorderSide(color: myColors.primary),
     padding: const EdgeInsets.symmetric(
       vertical: 18,
     ),

@@ -5,6 +5,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:tsports/Utils/Device/device_utility.dart';
 import 'package:tsports/Utils/Helpers/helper_functions.dart';
+import 'package:tsports/Utils/constants/colors.dart';
 import 'package:tsports/Utils/constants/sizes.dart';
 
 class appAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -24,6 +25,8 @@ class appAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isDark = myHelperFunctions.isDarkMode(context);
+
     return Padding(
         padding: const EdgeInsets.symmetric(horizontal: mySizes.md),
         child: AppBar(
@@ -31,8 +34,9 @@ class appAppBar extends StatelessWidget implements PreferredSizeWidget {
           leading: showBackArrow
               ? IconButton(
                   onPressed: () => Get.back(),
-                  icon: const Icon(
+                  icon: Icon(
                     Iconsax.arrow_left,
+                    color: isDark ? myColors.white : myColors.dark,
                   ))
               : leadingIcon != null
                   ? IconButton(

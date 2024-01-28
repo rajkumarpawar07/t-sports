@@ -55,6 +55,7 @@ class myImages {
 
   // -- brand logos
   static const String adidasBrandLogo = "assets/icons/brands/Adidas-logo.png";
+  static const String nikeBrandLogo = "assets/icons/brands/nike-logo.png";
 
   // -- products
   static const String adidasProduct =
@@ -62,4 +63,14 @@ class myImages {
 
   // --- user images
   static const String userProfile = "assets/images/user/user_image.png";
+
+  // --- product detail image 1
+  static const String productDetailImage1 =
+      "assets/images/products/shoe_image_1.jpg";
+  static const String productDetailImage2 =
+      "assets/images/products/shoe_image_2.jpg";
+  static const String productDetailImage3 =
+      "assets/images/products/shoe_image_3.jpg";
+  static const String productDetailImage4 =
+      "assets/images/products/shoe_image_4.jpg";
 }

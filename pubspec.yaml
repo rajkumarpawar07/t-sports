@@ -54,6 +54,8 @@ dependencies:
   lottie: ^2.7.0
   flutter_svg: ^2.0.9
   carousel_slider: ^4.2.1
+  readmore: ^2.2.0
+  flutter_rating_bar: ^4.0.1
 
 dev_dependencies:
   flutter_test:
