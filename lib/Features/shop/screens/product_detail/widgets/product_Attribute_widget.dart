@@ -130,6 +130,7 @@ class ProductAttributes extends StatelessWidget {
           children: [
             appSectionHeadline(
               title: "Sizes",
+              showActionButton: false,
             ),
             SizedBox(
               height: mySizes.spaceBtwItems / 2,

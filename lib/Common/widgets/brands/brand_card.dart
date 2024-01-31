@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:tsports/Common/widgets/Custom_Shapes/Containers/circular_container.dart';
 import 'package:tsports/Common/widgets/images/app_rounded_small_image.dart';
 import 'package:tsports/Common/widgets/texts/brand_title_with_icon.dart';
+import 'package:tsports/Utils/Helpers/helper_functions.dart';
+import 'package:tsports/Utils/constants/colors.dart';
 import 'package:tsports/Utils/constants/enums.dart';
 import 'package:tsports/Utils/constants/image_strings.dart';
 import 'package:tsports/Utils/constants/sizes.dart';
@@ -15,6 +17,7 @@ class appBrandCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = myHelperFunctions.isDarkMode(context);
     return GestureDetector(
       onTap: onTap,
       child: appCircularContainer(
@@ -26,7 +29,8 @@ class appBrandCard extends StatelessWidget {
             /// -- Icon
             Flexible(
               child: appRoundedSmallImage(
-                overLayColor: Colors.white,
+                fit: BoxFit.contain,
+                overLayColor: isDark ? myColors.white : myColors.black,
                 isNetworkImage: false,
                 backgroundColor: Colors.transparent,
                 image: myImages.adidasBrandLogo,

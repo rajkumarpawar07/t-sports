@@ -51,7 +51,7 @@ class appProductMetaData extends StatelessWidget {
                   .apply(decoration: TextDecoration.lineThrough),
             ),
             const SizedBox(
-              width: mySizes.spaceBtwItems,
+              width: mySizes.spaceBtwItems / 2,
             ),
 
             const appProductPriceText(
@@ -61,23 +61,23 @@ class appProductMetaData extends StatelessWidget {
           ],
         ),
         const SizedBox(
-          height: mySizes.spaceBtwItems / 3,
+          height: mySizes.spaceBtwItems / 4,
         ),
 
         /// Title
-        const appProductTitleText(title: "Green Nike Sports Shoe"),
+        const appProductTitleText(title: "Nike Sports Shoe"),
         const SizedBox(
-          height: mySizes.spaceBtwItems / 3,
+          height: mySizes.spaceBtwItems / 4,
         ),
 
         /// Stack status
         Row(
           children: [
             const appProductTitleText(
-              title: "Status",
+              title: "Status:",
             ),
             const SizedBox(
-              width: mySizes.spaceBtwItems,
+              width: mySizes.spaceBtwItems / 2,
             ),
             Text(
               "In stock",
@@ -86,7 +86,7 @@ class appProductMetaData extends StatelessWidget {
           ],
         ),
         const SizedBox(
-          height: mySizes.spaceBtwItems / 3,
+          height: mySizes.spaceBtwItems / 4,
         ),
 
         /// brand

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tsports/Common/widgets/Custom_Shapes/Containers/primary_header_constiner.dart';
 import 'package:tsports/Common/widgets/Custom_Shapes/Containers/search_container.dart';
 import 'package:tsports/Common/widgets/layouts/grid_layout.dart';
@@ -9,6 +10,7 @@ import 'package:tsports/Features/shop/screens/Home/HomeScreen.dart';
 import 'package:tsports/Features/shop/screens/Home/widgets/HomeScreenAppBarWidget.dart';
 import 'package:tsports/Features/shop/screens/Home/widgets/HomeScreenCategoryWidget.dart';
 import 'package:tsports/Features/shop/screens/Home/widgets/HomeScreenPromoSliderWidget.dart';
+import 'package:tsports/Features/shop/screens/all_products/all_products_screen.dart';
 import 'package:tsports/Utils/constants/colors.dart';
 import 'package:tsports/Utils/constants/image_strings.dart';
 import 'package:tsports/Utils/constants/sizes.dart';
@@ -82,9 +84,9 @@ class HomeScreen extends StatelessWidget {
               ),
 
               /// heading -- popular categories
-              const appSectionHeadline(
+              appSectionHeadline(
                 title: 'Popular Products',
-                onPressed: null,
+                onPressed: () => Get.to(() => const AllProductsScreen()),
               ),
               const SizedBox(
                 height: mySizes.spaceBtwItems,

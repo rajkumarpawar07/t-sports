@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:tsports/Common/widgets/appbar/appbar.dart';
 import 'package:tsports/Common/widgets/products/cart/cart_menu_icon.dart';
+import 'package:tsports/Features/shop/screens/Cart/CartScreen.dart';
 import 'package:tsports/Utils/constants/text_strings.dart';
 
 class appHomeAppBar extends StatelessWidget {
@@ -35,7 +38,7 @@ class appHomeAppBar extends StatelessWidget {
       /// actions
       actions: [
         appCartCounterIcon(
-          onPressed: () {},
+          onPressed: () => Get.to(() => CartScreen()),
           iconColor: Colors.white,
         )
       ],

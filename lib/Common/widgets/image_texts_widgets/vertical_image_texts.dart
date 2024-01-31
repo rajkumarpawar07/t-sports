@@ -22,6 +22,7 @@ class appVerticalImageText extends StatelessWidget {
   Widget build(BuildContext context) {
     bool isDark = myHelperFunctions.isDarkMode(context);
     return GestureDetector(
+      onTap: onTap,
       child: Padding(
           padding: const EdgeInsets.only(right: mySizes.sm),
           child: SingleChildScrollView(

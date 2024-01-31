@@ -73,4 +73,8 @@ class myImages {
       "assets/images/products/shoe_image_3.jpg";
   static const String productDetailImage4 =
       "assets/images/products/shoe_image_4.jpg";
+  static const String iphone12 = "assets/images/products/iPhone-12.png";
+
+  // --- payment methods
+  static const String Phonepe = "assets/icons/payment_methods/PhonePe_Logo.png";
 }

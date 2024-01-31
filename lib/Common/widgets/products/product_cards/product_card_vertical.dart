@@ -99,7 +99,7 @@ class appProductCardVertical extends StatelessWidget {
                   /// App brand Title with verified Icon
 
                   appBrandTitleWithIcon(
-                    title: 'Nike',
+                    title: 'iPhone',
                   ),
                 ],
               ),

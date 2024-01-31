@@ -10,7 +10,9 @@ import 'package:tsports/Common/widgets/images/app_rounded_small_image.dart';
 import 'package:tsports/Common/widgets/list_tiles/setting_menu_tile.dart';
 import 'package:tsports/Common/widgets/list_tiles/user_profile_tiles.dart';
 import 'package:tsports/Common/widgets/texts/section_headline_text.dart';
+import 'package:tsports/Features/personalisation/screens/address/AddressScreen.dart';
 import 'package:tsports/Features/personalisation/screens/profile/ProfileScreen.dart';
+import 'package:tsports/Features/shop/screens/order/OrdersScreen.dart';
 import 'package:tsports/Utils/Helpers/helper_functions.dart';
 import 'package:tsports/Utils/constants/colors.dart';
 import 'package:tsports/Utils/constants/image_strings.dart';
@@ -61,17 +63,21 @@ class SettingScreen extends StatelessWidget {
                     height: mySizes.spaceBtwItems,
                   ),
                   appSettingMenuTile(
-                      icon: Iconsax.safe_home,
-                      title: 'My Addresses',
-                      subTitle: 'Set shopping delivery address'),
+                    icon: Iconsax.safe_home,
+                    title: 'My Addresses',
+                    subTitle: 'Set shopping delivery address',
+                    onTap: () => Get.to(() => UserAddressScreen()),
+                  ),
                   appSettingMenuTile(
                       icon: Iconsax.shopping_cart,
                       title: 'My Cart',
                       subTitle: "Add remove products and move to checkout"),
                   appSettingMenuTile(
-                      icon: Iconsax.bag_tick,
-                      title: 'My Orders',
-                      subTitle: 'In-progress and Completed Orders'),
+                    icon: Iconsax.bag_tick,
+                    title: 'My Orders',
+                    subTitle: 'In-progress and Completed Orders',
+                    onTap: () => Get.to(() => OrderScreen()),
+                  ),
                   appSettingMenuTile(
                       icon: Iconsax.bank,
                       title: 'Bank Account',

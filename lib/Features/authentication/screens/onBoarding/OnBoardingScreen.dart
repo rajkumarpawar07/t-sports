@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:tsports/Features/authentication/controllers.onboarding/onboarding_controller.dart';
+import 'package:tsports/Features/authentication/controllers/onboarding_controller.dart';
 import 'package:tsports/Features/authentication/screens/onBoarding/widgets/onboarding_page.dart';
 import 'package:tsports/Features/authentication/screens/onBoarding/widgets/onboarding_skip_button.dart';
 import 'package:tsports/Features/authentication/screens/onBoarding/widgets/onboarding_dot_navigation.dart';

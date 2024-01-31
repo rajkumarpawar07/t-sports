@@ -28,7 +28,7 @@ class appProductImageSlider extends StatelessWidget {
             SizedBox(
               height: 390,
               child: Center(
-                child: Image(image: AssetImage(myImages.productDetailImage2)),
+                child: Image(image: AssetImage(myImages.productDetailImage3)),
               ),
             ),
 
@@ -52,7 +52,7 @@ class appProductImageSlider extends StatelessWidget {
                       backgroundColor: isDark ? myColors.dark : myColors.white,
                       border: Border.all(color: myColors.primary),
                       padding: EdgeInsets.all(mySizes.sm),
-                      imageUrl: myImages.productDetailImage1),
+                      imageUrl: myImages.productDetailImage3),
                 ),
               ),
             ),

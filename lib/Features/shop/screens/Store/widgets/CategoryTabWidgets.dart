@@ -25,7 +25,7 @@ class appCategoryTab extends StatelessWidget {
                   appBrandShowCase(
                     images: [
                       myImages.adidasProduct,
-                      myImages.iphoneProdct,
+                      myImages.adidasProduct,
                       myImages.adidasProduct
                     ],
                   ),

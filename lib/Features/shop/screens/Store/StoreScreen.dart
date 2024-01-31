@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tsports/Common/widgets/Custom_Shapes/Containers/circular_container.dart';
 import 'package:tsports/Common/widgets/Custom_Shapes/Containers/search_container.dart';
 import 'package:tsports/Common/widgets/appbar/appbar.dart';
@@ -12,6 +13,7 @@ import 'package:tsports/Common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:tsports/Common/widgets/texts/brand_title_with_icon.dart';
 import 'package:tsports/Common/widgets/texts/section_headline_text.dart';
 import 'package:tsports/Features/shop/screens/Store/widgets/CategoryTabWidgets.dart';
+import 'package:tsports/Features/shop/screens/brands/all_brands_screen.dart';
 import 'package:tsports/Utils/Helpers/helper_functions.dart';
 import 'package:tsports/Utils/constants/colors.dart';
 import 'package:tsports/Utils/constants/enums.dart';
@@ -74,7 +76,8 @@ class StoreScreen extends StatelessWidget {
                               /// --- featured Brands ---
                               appSectionHeadline(
                                 title: "Featured  brands",
-                                onPressed: () {},
+                                onPressed: () =>
+                                    Get.to(() => AllBrandsScreen()),
                               ),
                               const SizedBox(
                                 height: mySizes.spaceBtwItems / 1.5,

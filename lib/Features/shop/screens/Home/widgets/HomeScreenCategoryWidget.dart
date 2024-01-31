@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tsports/Common/widgets/image_texts_widgets/vertical_image_texts.dart';
+import 'package:tsports/Features/shop/screens/sub_category/SubCategoryScreen.dart';
 import 'package:tsports/Utils/constants/image_strings.dart';
 
 class appHomeCategoryWidget extends StatelessWidget {
@@ -18,10 +20,10 @@ class appHomeCategoryWidget extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             itemBuilder: (_, index) {
               return appVerticalImageText(
-                image: myImages.furnitureIcon,
-                title: "Furniture",
+                image: myImages.animalIcon,
+                title: "Sports",
                 textColor: Colors.white,
-                onTap: () {},
+                onTap: () => Get.to(() => SubCategoriesScreen()),
               );
             }));
   }
